@@ -25,3 +25,5 @@ bld/
 
 # manual cmake build ignores
 build/
+project
+.vscode
