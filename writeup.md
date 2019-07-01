@@ -167,7 +167,7 @@ A movie at normal speed is here : [output/scenario-5.mov](output/scenario-5.mov)
 
 The goal is to replace the existing controller with the controller implemented in the Controls project. Then, tune the parameters to make sure the scenario `11_GPSUpdate` passes successfully.
 
-The new controller and its parameters are [src/QuadController.cpp](src/QuadController.cpp), [QuadControlParams.txt](QuadControlParams.txt)
+The new controller and its parameters are [src/QuadControl.cpp](src/QuadControl.cpp), [config/QuadControlParams.txt](config/QuadControlParams.txt)
 
 **Simulation output**
 
