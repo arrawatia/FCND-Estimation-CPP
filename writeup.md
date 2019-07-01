@@ -105,6 +105,7 @@ QVelZStd = .1
 **Simulation output**
 
 A (high speed) gif of the simulation `09_PredictCovariance` which shows that **the estimated covariance tracks the actual data closely**. 
+
 ![Scenario 3.1](output/scenario-3.2.mov.gif)
 
 A movie at normal speed is here : [output/scenario-3.2.mov](output/scenario-3.2.mov)
@@ -127,6 +128,7 @@ PASS: ABS(Quad.Est.E.Yaw-0.000000) was less than Quad.Est.S.Yaw for 79% of the t
 ```
 
 A (high speed) gif of the simulation `10_MagUpdate` which shows that **the estimated standard deviation accurately captures the error and the error is within acceptable bounds**. 
+
 ![Scenario 4.1](output/scenario-4.mov.gif)
 
 A movie at normal speed is here : [output/scenario-4.mov](output/scenario-4.mov)
