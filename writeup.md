@@ -126,7 +126,7 @@ PASS: ABS(Quad.Est.E.Yaw) was less than 0.120000 for at least 10.000000 seconds
 PASS: ABS(Quad.Est.E.Yaw-0.000000) was less than Quad.Est.S.Yaw for 79% of the time
 ```
 
-A (high speed) gif of the simulation `10_MagUpdate` which shows that **the estimated standard deviation that accurately captures the error and maintain an error within acceptable bounds t**. 
+A (high speed) gif of the simulation `10_MagUpdate` which shows that **the estimated standard deviation accurately captures the error and the error is within acceptable bounds**. 
 ![Scenario 4.1](output/scenario-4.mov.gif)
 
 A movie at normal speed is here : [output/scenario-4.mov](output/scenario-4.mov)
