@@ -217,19 +217,19 @@ MatrixXf QuadEstimatorEKF::GetRbgPrime(float roll, float pitch, float yaw)
 
   ////////////////////////////// BEGIN STUDENT CODE ///////////////////////////
 
-    float ϴ = pitch;
-    float ϕ = roll ;
-    float ψ = yaw ;
+    float theta = pitch;
+    float phi = roll ;
+    float psi = yaw ;
     
     // First row
-    RbgPrime(0,0) = (-(cos(ϴ) * sin(ψ)));
-    RbgPrime(0,1) = (-(sin(ϕ) * sin(ϴ) * sin(ψ)) - (cos(ϕ) * cos(ψ)));
-    RbgPrime(0,2) = (-(cos(ϕ) * sin(ϴ) * sin(ψ)) + (sin(ϕ) * cos(ψ)));
+    RbgPrime(0,0) = (-(cos(theta) * sin(psi)));
+    RbgPrime(0,1) = (-(sin(phi) * sin(theta) * sin(psi)) - (cos(phi) * cos(psi)));
+    RbgPrime(0,2) = (-(cos(phi) * sin(theta) * sin(psi)) + (sin(phi) * cos(psi)));
     
     //Second row
-    RbgPrime(1,0) = (cos(ϴ) * cos(ψ)) ;
-    RbgPrime(1,1) = (sin(ϕ) * sin(ϴ) * cos(ψ)) - (cos(ϕ) * sin(ψ));
-    RbgPrime(1,2) = (cos(ϕ) * sin(ϴ) * cos(ψ)) + (sin(ϕ) * sin(ψ));
+    RbgPrime(1,0) = (cos(theta) * cos(psi)) ;
+    RbgPrime(1,1) = (sin(phi) * sin(theta) * cos(psi)) - (cos(phi) * sin(psi));
+    RbgPrime(1,2) = (cos(phi) * sin(theta) * cos(psi)) + (sin(phi) * sin(psi));
     
     // Third row
     RbgPrime(2,0) = 0;
